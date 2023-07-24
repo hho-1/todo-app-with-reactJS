@@ -1,0 +1,60 @@
+.main-class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.main-class h1{
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 1rem;
+    color: #6C757D;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.showToDo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #346C53;
+    width: 40vw;
+    border-radius: 20px;
+    margin-bottom: .2rem;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #D1E7DD;
+    color: #346C53;
+}
+.showToDo p{
+    font-size: 1.2rem;
+    color: #0F5132;
+    padding: .5rem;
+    border: none;
+    flex: 1;
+    padding-left: 1rem;
+    border-radius: 20px 0 0 20px;
+}
+.showToDo button{
+    
+    padding: .5rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    
+}
+.showToDo button i{
+    transition: all 0.4s;
+}
+button.check{
+    color: blue;
+    transition: all 0.3s;
+    background-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+button.trash{
+    color: #DC3545;
+    transition: all 0.3s;
+    background-color: transparent;
+    border-radius: 0 20px 20px 0;
+}
+.showToDo button:hover i{
+    font-size: 1.6rem;
+}
