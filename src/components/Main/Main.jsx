@@ -27,7 +27,7 @@ const Main = ({toDo, onDelete}) => {
             : 
             (<section className='showToDo'>
                 
-                <button className='check' onClick={handleCheckClick}><i className="fa-solid fa-check-double"></i></button>
+                <button className='check' onClick={handleCheckClick}><i className="fa-solid fa-check"></i></button>
                 <p className='uncompleted'>{toDo.title}</p>
                 <button className='trash' onClick={handleDeleteClick}><i className="fa-solid fa-trash-can"></i></button>
             </section>)

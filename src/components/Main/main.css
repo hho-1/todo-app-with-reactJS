@@ -37,6 +37,7 @@
     color: #ff5e49;
     font-style: italic;
     text-decoration: solid line-through #ff5e49;
+    text-decoration-thickness: 3px;
     padding: .5rem;
     border: none;
     flex: 1;
