@@ -8,11 +8,11 @@ import TaskList from './components/ToDoList/ToDoList';
 function App() {
   const [toDos, setToDos] = useState([])
 
-    const createToDo = (toDo) => {
+    const createToDo = (title) => {
         const createdToDos = [
             ...toDos, {
                 id: Math.round(Math.random() * 999999999),
-                toDo: toDo
+                title
             }
         ];
         setToDos(createdToDos)

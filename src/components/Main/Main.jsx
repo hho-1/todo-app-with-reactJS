@@ -5,22 +5,35 @@ import "./main.css"
 const Main = ({toDo, onDelete}) => {
 
     const [completed, setCompleted] = useState(false)
-    const handleCheck = () => {
+    const handleCheckClick = () => {
         setCompleted(!completed)
     }
 
-    const handleDelete = () => {
+    const handleDeleteClick = () => {
         onDelete(toDo.id)
     }
 
     return (
+        
         <div className='main-class'>
-            <section className='showToDo'>
+            {
+                completed ? (<section className='showToDo completed'>
                 
-                <button className='check' onClick={handleCheck}><i className="fa-solid fa-check-double"></i></button>
-                <p>{toDo}</p>
-                <button className='trash' onClick={handleDelete}><i className="fa-solid fa-trash-can"></i></button>
+                <button className='check completed' onClick={handleCheckClick}><i className="fa-solid fa-check-double"></i></button>
+                <p>{toDo.title}</p>
+                <button className='trash' onClick={handleDeleteClick}><i className="fa-solid fa-trash-can"></i></button>
             </section>
+            ) 
+            : 
+            (<section className='showToDo'>
+                
+                <button className='check' onClick={handleCheckClick}><i className="fa-solid fa-check-double"></i></button>
+                <p className='uncompleted'>{toDo.title}</p>
+                <button className='trash' onClick={handleDeleteClick}><i className="fa-solid fa-trash-can"></i></button>
+            </section>)
+            }
+            
+            
             
         </div>
     )

@@ -7,7 +7,7 @@ const TaskList = ({toDos, onDelete}) => {
     <div>
         {toDos.map((toDo) => {
             return (
-                <Main key={toDo.id} toDo={toDo.toDo} onDelete={onDelete}/>
+                <Main key={toDo.id} toDo={toDo} onDelete={onDelete}/>
             )
         })}
     </div>

@@ -23,9 +23,20 @@
     background-color: #D1E7DD;
     color: #346C53;
 }
-.showToDo p{
+.uncompleted{
     font-size: 1.2rem;
     color: #0F5132;
+    padding: .5rem;
+    border: none;
+    flex: 1;
+    padding-left: 1rem;
+    border-radius: 20px 0 0 20px;
+}
+.completed p{
+    font-size: 1.2rem;
+    color: #ff5e49;
+    font-style: italic;
+    text-decoration: solid line-through #ff5e49;
     padding: .5rem;
     border: none;
     flex: 1;
@@ -48,6 +59,9 @@ button.check{
     transition: all 0.3s;
     background-color: transparent;
     border-radius: 20px 0 0 20px;
+}
+.check.completed{
+    color: #ff5e49;
 }
 button.trash{
     color: #DC3545;
